@@ -46,10 +46,10 @@ const Contact = () => {
                 </div>
             </header>
 
-            <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                <div className="grid lg:grid-cols-2 gap-12">
+            <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 overflow-x-hidden">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     {/* Left Side: Contact Form */}
-                    <div className="bg-white p-8 md:p-10 rounded-xl shadow-sm border border-slate-200">
+                    <div className="bg-white p-5 sm:p-6 md:p-10 rounded-xl shadow-sm border border-slate-200">
                         <div className="mb-8">
                             <h2 className="text-2xl font-bold text-slate-900 mb-2">Send us a Message</h2>
                             <p className="text-slate-500">Fill out the form below and our administrative team will respond within 24 hours.</p>
@@ -146,43 +146,75 @@ const Contact = () => {
                     {/* Right Side: Info Sidebar */}
                     <div className="space-y-8">
                         {/* Contact Info Cards */}
-                        <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200 space-y-6">
-                            <h2 className="text-2xl font-bold text-slate-900 mb-4">Contact Information</h2>
+                        <div className="bg-white p-6 sm:p-8 rounded-xl shadow-sm border border-slate-200 space-y-8 w-full">
+                            <h2 className="text-2xl font-bold text-slate-900">
+                                Contact Information
+                            </h2>
+
+                            {/* Phone */}
                             <div className="flex items-start gap-4">
-                                <div className="bg-primary/10 p-3 rounded-lg">
+                                <div className="bg-primary/10 p-3 rounded-lg shrink-0">
                                     <Phone className="text-primary w-6 h-6" />
                                 </div>
-                                <div>
-                                    <h3 className="font-bold text-slate-900">Phone Numbers</h3>
-                                    <p className="text-slate-600">Main Line: 01-4488777</p>
-                                    <p className="text-red-500 font-medium">ER Hot-line: 9801234567</p>
+
+                                <div className="min-w-0">
+                                    <h3 className="font-bold text-slate-900 mb-1">
+                                        Phone Numbers
+                                    </h3>
+                                    <p className="text-slate-600 break-words">
+                                        Main Line: 01-4488777
+                                    </p>
+                                    <p className="text-red-500 font-medium break-words">
+                                        ER Hot-line: 9801234567
+                                    </p>
                                 </div>
                             </div>
+
+                            {/* Email */}
                             <div className="flex items-start gap-4">
-                                <div className="bg-primary/10 p-3 rounded-lg">
+                                <div className="bg-primary/10 p-3 rounded-lg shrink-0">
                                     <Mail className="text-primary w-6 h-6" />
                                 </div>
-                                <div>
-                                    <h3 className="font-bold text-slate-900">Email Address</h3>
-                                    <p className="text-slate-600">info@chabahilmedicenter.com.np</p>
-                                    <p className="text-slate-600">appointment@chabahilmedicenter.com.np</p>
+
+                                <div className="min-w-0">
+                                    <h3 className="font-bold text-slate-900 mb-1">
+                                        Email Address
+                                    </h3>
+                                    <p className="text-slate-600 break-all">
+                                        info@chabahilmedicenter.com.np
+                                    </p>
+                                    <p className="text-slate-600 break-all">
+                                        appointment@chabahilmedicenter.com.np
+                                    </p>
                                 </div>
                             </div>
+
+                            {/* Address */}
                             <div className="flex items-start gap-4">
-                                <div className="bg-primary/10 p-3 rounded-lg">
+                                <div className="bg-primary/10 p-3 rounded-lg shrink-0">
                                     <MapPin className="text-primary w-6 h-6" />
                                 </div>
-                                <div className="flex-1">
-                                    <h3 className="font-bold text-slate-900">Physical Address</h3>
-                                    <p className="text-slate-600 leading-relaxed">
+
+                                <div className="min-w-0">
+                                    <h3 className="font-bold text-slate-900 mb-1">
+                                        Physical Address
+                                    </h3>
+                                    <p className="text-slate-600 leading-relaxed break-words">
                                         Chabahil Medical Center, Pashupati Road, Chabahil, Kathmandu 44600, Nepal
                                     </p>
-                                    <a className="text-primary font-semibold text-sm hover:underline flex items-center gap-1 mt-1" href="https://www.google.com/maps/search/?api=1&query=Chabahil+Medical+Center+Kathmandu" target="_blank" rel="noopener noreferrer">
+
+                                    <a
+                                        href="https://www.google.com/maps/search/?api=1&query=Chabahil+Medical+Center+Kathmandu"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-1 text-primary font-semibold text-sm hover:underline mt-2 break-words"
+                                    >
                                         Get Directions <ArrowRight className="w-4 h-4" />
                                     </a>
                                 </div>
                             </div>
                         </div>
+
 
                         {/* Hours of Operation */}
                         <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
