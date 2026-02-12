@@ -154,8 +154,8 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-slate-900">Phone Numbers</h3>
-                                    <p className="text-slate-600">Main Line: (555) 123-4567</p>
-                                    <p className="text-red-500 font-medium">ER Hot-line: (555) 911-0000</p>
+                                    <p className="text-slate-600">Main Line: 01-4488777</p>
+                                    <p className="text-red-500 font-medium">ER Hot-line: 9801234567</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-4">
@@ -164,8 +164,8 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-slate-900">Email Address</h3>
-                                    <p className="text-slate-600">info@cityhealth.hospital</p>
-                                    <p className="text-slate-600">appointments@cityhealth.hospital</p>
+                                    <p className="text-slate-600">info@chabahilmedicenter.com.np</p>
+                                    <p className="text-slate-600">appointment@chabahilmedicenter.com.np</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-4">
@@ -174,8 +174,10 @@ const Contact = () => {
                                 </div>
                                 <div className="flex-1">
                                     <h3 className="font-bold text-slate-900">Physical Address</h3>
-                                    <p className="text-slate-600 leading-relaxed">1230 Healthcare Plaza, Medical District, City Center, NY 10001</p>
-                                    <a className="text-primary font-semibold text-sm hover:underline flex items-center gap-1 mt-1" href="#">
+                                    <p className="text-slate-600 leading-relaxed">
+                                        Chabahil Medical Center, Pashupati Road, Chabahil, Kathmandu 44600, Nepal
+                                    </p>
+                                    <a className="text-primary font-semibold text-sm hover:underline flex items-center gap-1 mt-1" href="https://www.google.com/maps/search/?api=1&query=Chabahil+Medical+Center+Kathmandu" target="_blank" rel="noopener noreferrer">
                                         Get Directions <ArrowRight className="w-4 h-4" />
                                     </a>
                                 </div>
@@ -195,11 +197,11 @@ const Contact = () => {
                                 </div>
                                 <div className="flex justify-between items-center py-2 border-b border-slate-100">
                                     <span className="text-slate-600">Outpatient Services</span>
-                                    <span className="font-semibold text-slate-900">8:00 AM - 8:00 PM</span>
+                                    <span className="font-semibold text-slate-900">7:00 AM - 7:00 PM</span>
                                 </div>
                                 <div className="flex justify-between items-center py-2 border-b border-slate-100">
                                     <span className="text-slate-600">Visiting Hours</span>
-                                    <span className="font-semibold text-slate-900">10:00 AM - 6:00 PM</span>
+                                    <span className="font-semibold text-slate-900">10:00 AM - 5:00 PM</span>
                                 </div>
                                 <div className="flex justify-between items-center py-2">
                                     <span className="text-slate-600">Pharmacy</span>
@@ -232,7 +234,7 @@ const Contact = () => {
                         </div>
                         <span className="font-bold text-slate-900">Main Medical Tower</span>
                     </div>
-                    <p className="text-xs text-slate-500">Primary emergency entrance located on East Wing, 2nd floor parking access.</p>
+                    <p className="text-xs text-slate-500">Entrance beside Chabahil Chowk, next to Pashupati Road, easy access to parking area.</p>
                 </div>
             </div>
         </div>
