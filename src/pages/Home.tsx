@@ -3,6 +3,7 @@ import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Card from '../components/ui/Card';
 import TestimonialCard from '../components/ui/TestimonialCard';
+import StatCounter from '../components/ui/StatCounter';
 
 const features = [
     {
@@ -44,6 +45,13 @@ const testimonials = [
         patientType: "Emergency Care",
         patientImage: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop"
     }
+];
+
+const homeStats = [
+    { value: '25k+', label: 'Surgeries Performed' },
+    { value: '150+', label: 'Expert Doctors' },
+    { value: '98%', label: 'Patient Satisfaction' },
+    { value: '24/7', label: 'Emergency Response' }
 ];
 
 const Home = () => {
@@ -109,22 +117,14 @@ const Home = () => {
             <section className="bg-gradient-to-r from-blue-50 to-cyan-50 py-20 px-6">
                 <div className="max-w-7xl mx-auto">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
-                        <div className="text-center">
-                            <h3 className="text-4xl md:text-5xl font-extrabold text-primary mb-2">25k+</h3>
-                            <p className="text-slate-600 font-medium">Surgeries Performed</p>
-                        </div>
-                        <div className="text-center">
-                            <h3 className="text-4xl md:text-5xl font-extrabold text-primary mb-2">150+</h3>
-                            <p className="text-slate-600 font-medium">Expert Doctors</p>
-                        </div>
-                        <div className="text-center">
-                            <h3 className="text-4xl md:text-5xl font-extrabold text-primary mb-2">98%</h3>
-                            <p className="text-slate-600 font-medium">Patient Satisfaction</p>
-                        </div>
-                        <div className="text-center">
-                            <h3 className="text-4xl md:text-5xl font-extrabold text-primary mb-2">24/7</h3>
-                            <p className="text-slate-600 font-medium">Emergency Response</p>
-                        </div>
+                        {homeStats.map((stat, index) => (
+                            <div key={index} className="text-center">
+                                <h3 className="text-4xl md:text-5xl font-extrabold text-primary mb-2">
+                                    {stat.value === '24/7' ? stat.value : <StatCounter endValue={stat.value} />}
+                                </h3>
+                                <p className="text-slate-600 font-medium">{stat.label}</p>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>

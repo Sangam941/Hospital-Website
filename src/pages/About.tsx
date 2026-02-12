@@ -1,5 +1,6 @@
 
 import { ArrowRight, Activity, Heart, BadgeCheck, Scale } from 'lucide-react';
+import StatCounter from '../components/ui/StatCounter';
 
 const stats = [
     { value: '50+', label: 'Years Experience' },
@@ -95,7 +96,9 @@ const About = () => {
                 <div className="bg-white rounded-2xl shadow-2xl p-8 grid grid-cols-2 md:grid-cols-4 gap-8 border border-slate-100">
                     {stats.map((stat, index) => (
                         <div key={index} className={`text-center ${index > 0 ? 'border-l border-slate-100' : ''}`}>
-                            <div className="text-4xl font-extrabold text-primary mb-1">{stat.value}</div>
+                            <div className="text-4xl font-extrabold text-primary mb-1">
+                                {stat.value === '24/7' ? stat.value : <StatCounter endValue={stat.value} />}
+                            </div>
                             <div className="text-sm font-semibold text-slate-500 uppercase tracking-wide">{stat.label}</div>
                         </div>
                     ))}
