@@ -1,28 +1,28 @@
 
-import { ArrowRight, Activity, Heart, BadgeCheck, Scale } from 'lucide-react';
+import { ArrowRight, Smile, Heart, BadgeCheck, Scale } from 'lucide-react';
 import StatCounter from '../components/ui/StatCounter';
 
 const stats = [
-    { value: '50+', label: 'Years Experience' },
-    { value: '200+', label: 'Specialist Doctors' },
-    { value: '10k+', label: 'Annual Patients' },
-    { value: '24/7', label: 'Emergency Care' }
+    { value: '50+', label: 'Years of Smiles' },
+    { value: '25+', label: 'Expert Dentists' },
+    { value: '15k+', label: 'Annual Patient Smiles' },
+    { value: '24/7', label: 'Emergency Dental' }
 ];
 
 const missionVision = [
     {
-        icon: Activity,
+        icon: Smile,
         title: 'Our Mission',
-        description: 'To provide compassionate, accessible, and high-quality healthcare to our community. We strive to improve health outcomes through evidence-based practices and a patient-centered approach that honors the dignity of every individual.',
+        description: 'To provide compassionate, accessible, and high-quality dental care to our community. We strive to improve oral health outcomes through evidence-based practices and a patient-centered approach that honors the dignity of every individual.',
         bgColor: 'bg-primary/5',
         iconBgColor: 'bg-primary/10',
         iconColor: 'text-primary',
         hoverBgColor: 'group-hover:bg-primary/10'
     },
     {
-        icon: Activity,
+        icon: Smile,
         title: 'Our Vision',
-        description: 'To be the leading choice for healthcare excellence in the region, recognized for our clinical outcomes, advanced technology, and innovative medical research, while maintaining the warmth of a community-focused institution.',
+        description: 'To be the leading choice for dental excellence in the region, recognized for our clinical outcomes, advanced technology, and innovative oral health research, while maintaining the warmth of a community-focused institution.',
         bgColor: 'bg-accent-green/5',
         iconBgColor: 'bg-accent-green/10',
         iconColor: 'text-accent-green',
@@ -74,10 +74,10 @@ const About = () => {
                             Established 1974
                         </span>
                         <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
-                            Dedicated to Your <span className="text-primary">Health</span> and Wellbeing
+                            Dedicated to Your <span className="text-primary">Smile</span> and Wellbeing
                         </h1>
                         <p className="text-xl text-slate-200 leading-relaxed mb-8">
-                            Providing world-class healthcare with a human touch for over 50 years. We combine medical excellence with genuine compassion.
+                            Providing world-class dental care with a human touch for over 50 years. We combine clinical excellence with genuine compassion for your smile.
                         </p>
                         <div className="flex gap-4">
                             <button className="cursor-pointer bg-primary hover:bg-blue-600 text-white px-8 py-4 rounded-xl font-bold transition-all flex items-center gap-2">
@@ -122,13 +122,13 @@ const About = () => {
                     </div>
                     <div>
                         <h2 className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Our History</h2>
-                        <h3 className="text-4xl font-bold text-slate-900 mb-6 leading-tight">Legacy of Care and Medical Innovation</h3>
+                        <h3 className="text-4xl font-bold text-slate-900 mb-6 leading-tight">Legacy of Care and Dental Innovation</h3>
                         <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
                             <p>
-                                Founded in 1974, MediCore Hospital began as a small community clinic dedicated to rural health. Over the decades, we have evolved into a state-of-the-art multi-specialty medical center, consistently pushing the boundaries of medical science.
+                                Founded in 1974, Prestin Dental clinic began as a small community dental clinic dedicated to rural oral health. Over the decades, we have evolved into a state-of-the-art multi-specialty dental center, consistently pushing the boundaries of dental science.
                             </p>
                             <p>
-                                Today, we stand as a beacon of hope and healing, equipped with the latest diagnostic technology and staffed by some of the world's leading medical experts. Our growth has been fueled by one constant: an unwavering commitment to the people we serve.
+                                Today, we stand as a beacon of oral health and healing, equipped with the latest diagnostic technology and staffed by some of the world's leading dental experts. Our growth has been fueled by one constant: an unwavering commitment to the people we serve.
                             </p>
                         </div>
                         <div className="mt-10 flex items-center gap-6">
@@ -173,7 +173,7 @@ const About = () => {
                     <h2 className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Core Values</h2>
                     <h3 className="text-4xl font-bold text-slate-900 mb-6">The Principles That Guide Us</h3>
                     <p className="text-slate-600 text-lg">
-                        Our values are the heartbeat of our hospital. They define how we treat our patients, our partners, and each other every single day.
+                        Our values are the heartbeat of our dental clinic. They define how we treat our patients, our partners, and each other every single day.
                     </p>
                 </div>
 

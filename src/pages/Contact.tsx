@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Send, Phone, Mail, MapPin, Clock, ArrowRight, Activity } from 'lucide-react';
+import { Send, Phone, Mail, MapPin, Clock, ArrowRight, Smile } from 'lucide-react';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -41,7 +41,7 @@ const Contact = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4">Contact Our Team</h1>
                     <p className="text-lg text-slate-500 max-w-2xl mx-auto">
-                        We are committed to providing you with the highest standard of medical care. Reach out to us for appointments, inquiries, or medical assistance.
+                        We are committed to providing you with the highest standard of dental care. Reach out to us for appointments, cleanings, or dental assistance.
                     </p>
                 </div>
             </header>
@@ -99,11 +99,11 @@ const Contact = () => {
                                     required
                                 >
                                     <option value="">General Inquiry</option>
-                                    <option value="cardiology">Cardiology</option>
-                                    <option value="pediatrics">Pediatrics</option>
-                                    <option value="neurology">Neurology</option>
+                                    <option value="general_dentistry">General Dentistry</option>
+                                    <option value="orthodontics">Orthodontics</option>
+                                    <option value="pediatrics">Pediatric Dentistry</option>
+                                    <option value="cosmetic">Cosmetic Dentistry</option>
                                     <option value="billing">Billing & Finance</option>
-                                    <option value="records">Medical Records</option>
                                 </select>
                             </div>
                             <div className="space-y-2">
@@ -165,7 +165,7 @@ const Contact = () => {
                                         Main Line: 01-4488777
                                     </p>
                                     <p className="text-red-500 font-medium break-words">
-                                        ER Hot-line: 9801234567
+                                        Emergency: 9801234567
                                     </p>
                                 </div>
                             </div>
@@ -200,7 +200,7 @@ const Contact = () => {
                                         Physical Address
                                     </h3>
                                     <p className="text-slate-600 leading-relaxed break-words">
-                                        Chabahil Medical Center, Pashupati Road, Chabahil, Kathmandu 44600, Nepal
+                                        Prestin Dental clinic, Pashupati Road, Chabahil, Kathmandu 44600, Nepal
                                     </p>
 
                                     <a
@@ -224,7 +224,7 @@ const Contact = () => {
                             </h3>
                             <div className="space-y-3">
                                 <div className="flex justify-between items-center py-2 border-b border-slate-100">
-                                    <span className="text-slate-600">Emergency Care</span>
+                                    <span className="text-slate-600">Emergency Dental</span>
                                     <span className="font-bold text-red-500">24 / 7 Available</span>
                                 </div>
                                 <div className="flex justify-between items-center py-2 border-b border-slate-100">
@@ -262,9 +262,9 @@ const Contact = () => {
                 <div className="absolute top-8 left-1/2 -translate-x-1/2 md:left-12 md:translate-x-0 bg-white p-4 rounded-lg shadow-xl border border-slate-100 max-w-xs z-10">
                     <div className="flex items-center gap-3 mb-2">
                         <div className="bg-primary p-2 rounded-full">
-                            <Activity className="text-white w-4 h-4" />
+                            <Smile className="text-white w-4 h-4" />
                         </div>
-                        <span className="font-bold text-slate-900">Main Medical Tower</span>
+                        <span className="font-bold text-slate-900">Prestin Dental Tower</span>
                     </div>
                     <p className="text-xs text-slate-500">Entrance beside Chabahil Chowk, next to Pashupati Road, easy access to parking area.</p>
                 </div>

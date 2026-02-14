@@ -7,18 +7,18 @@ import StatCounter from '../components/ui/StatCounter';
 
 const features = [
     {
-        title: "Expert Doctors",
-        description: "Our team of highly qualified and experienced doctors is here to provide you with the best possible treatment.",
+        title: "Expert Dentists",
+        description: "Our team of highly qualified and experienced dentists is here to provide you with the best possible oral care.",
         image: "/images/home/doctors-card.avif"
     },
     {
-        title: "Modern Technology",
-        description: "We utilize the latest medical technology and equipment to ensure accurate diagnoses and effective treatments.",
+        title: "Latest Dental Tech",
+        description: "We utilize the latest dental technology and equipment to ensure accurate diagnoses and pain-free treatments.",
         image: "/images/home/technology-card.avif"
     },
     {
-        title: "24/7 Emergency",
-        description: "Our emergency department is open 24 hours a day, 7 days a week, to handle any medical emergency.",
+        title: "24/7 Dental Emergency",
+        description: "Our emergency dental department is open 24 hours a day, 7 days a week, to handle any urgent dental needs.",
         image: "/images/home/available24-7-card.avif"
     }
 ];
@@ -26,21 +26,21 @@ const features = [
 const testimonials = [
     {
         rating: 5,
-        testimonial: "The level of care I received was beyond my expectations. The nurses were attentive and the doctor explained my surgery in a way that truly put me at ease.",
+        testimonial: "The level of care I received was beyond my expectations. My smile has never looked better, and the dentist explained the procedure in a way that put me at ease.",
         patientName: "Sarah Jenkins",
-        patientType: "Cardiology Patient",
+        patientType: "Orthodontic Patient",
         patientImage: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop"
     },
     {
         rating: 5,
         testimonial: "Clean facilities and very professional staff. I didn't have to wait long for my appointment, and the online booking system made everything seamless.",
         patientName: "David Miller",
-        patientType: "Orthopedic Surgery",
+        patientType: "Bridge & Crown Work",
         patientImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
     },
     {
         rating: 5,
-        testimonial: "They saved my life during an emergency. The response time was incredible and the ER team was calm, fast, and extremely effective. Highly recommended.",
+        testimonial: "They saved me during an late-night dental emergency. The response time was incredible and the team was calm, fast, and extremely effective. Highly recommended.",
         patientName: "Elena Rodriguez",
         patientType: "Emergency Care",
         patientImage: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop"
@@ -48,10 +48,10 @@ const testimonials = [
 ];
 
 const homeStats = [
-    { value: '25k+', label: 'Surgeries Performed' },
-    { value: '150+', label: 'Expert Doctors' },
-    { value: '98%', label: 'Patient Satisfaction' },
-    { value: '24/7', label: 'Emergency Response' }
+    { value: '15k+', label: 'Smile Transformations' },
+    { value: '25+', label: 'Expert Dentists' },
+    { value: '99%', label: 'Patient Satisfaction' },
+    { value: '24/7', label: 'Dental Emergency' }
 ];
 
 const Home = () => {
@@ -71,20 +71,20 @@ const Home = () => {
                 <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
                     <div className="max-w-3xl">
                         <span className="inline-block px-4 py-1.5 bg-primary/20 text-primary border border-primary/30 rounded-full text-sm font-bold uppercase tracking-wider mb-6">
-                            World Class Healthcare
+                            World Class Dental Care
                         </span>
                         <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-8 leading-tight">
-                            Your Health is Our <span className="text-primary">Priority</span>
+                            Your Smile is Our <span className="text-primary">Priority</span>
                         </h1>
                         <p className="text-xl text-slate-200 leading-relaxed mb-10 max-w-2xl">
-                            Experience the highest standard of medical care with our state-of-the-art facilities and dedicated team of specialists.
+                            Experience the highest standard of dental care with our state-of-the-art facilities and dedicated team of specialists.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
                             <Link to="/appointment" className="bg-primary hover:bg-blue-600 text-white px-8 py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2 text-lg">
                                 Book Appointment <ArrowRight className="w-5 h-5" />
                             </Link>
                             <Link to="/doctors" className="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2 text-lg">
-                                Find a Doctor
+                                Find a Dentist
                             </Link>
                         </div>
                     </div>

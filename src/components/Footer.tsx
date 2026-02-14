@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { Activity, Send } from 'lucide-react';
+import { Smile, Send } from 'lucide-react';
 
 const Footer = () => {
     return (
@@ -9,12 +9,12 @@ const Footer = () => {
                 <div className="col-span-1 md:col-span-1">
                     <div className="flex items-center gap-2 mb-8">
                         <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                            <Activity className="text-white w-6 h-6" />
+                            <Smile className="text-white w-6 h-6" />
                         </div>
-                        <span className="text-2xl font-bold tracking-tight text-white">MediCore</span>
+                        <span className="text-2xl font-bold tracking-tight text-white">Prestin Dental</span>
                     </div>
                     <p className="leading-relaxed">
-                        Advancing the standard of healthcare since 1974. Trust us with your family's health and wellness journey.
+                        Perfecting your smile with excellence since 1974. Trust us with your family's dental health and wellness journey.
                     </p>
                 </div>
 
@@ -29,12 +29,12 @@ const Footer = () => {
                 </div>
 
                 <div>
-                    <h4 className="text-white font-bold mb-8 uppercase tracking-widest text-sm">Departments</h4>
+                    <h4 className="text-white font-bold mb-8 uppercase tracking-widest text-sm">Our Services</h4>
                     <ul className="space-y-4">
-                        <li><Link to="/services" className="hover:text-primary transition-colors">Cardiology</Link></li>
-                        <li><Link to="/services" className="hover:text-primary transition-colors">Neurology</Link></li>
-                        <li><Link to="/services" className="hover:text-primary transition-colors">Pediatrics</Link></li>
-                        <li><Link to="/services" className="hover:text-primary transition-colors">Emergency</Link></li>
+                        <li><Link to="/services" className="hover:text-primary transition-colors">General Dentistry</Link></li>
+                        <li><Link to="/services" className="hover:text-primary transition-colors">Orthodontics</Link></li>
+                        <li><Link to="/services" className="hover:text-primary transition-colors">Pediatric Dentistry</Link></li>
+                        <li><Link to="/services" className="hover:text-primary transition-colors">Emergency Dental</Link></li>
                     </ul>
                 </div>
 
@@ -55,7 +55,7 @@ const Footer = () => {
             </div>
 
             <div className="max-w-7xl mx-auto pt-16 mt-16 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
-                <p>© 2024 MediCore Healthcare Systems. All rights reserved.</p>
+                <p>© 2026 Prestin Dental clinic. All rights reserved.</p>
                 <div className="flex gap-6">
                     <Link to="/" className="hover:text-white transition-colors">Privacy Policy</Link>
                     <Link to="/" className="hover:text-white transition-colors">Terms of Service</Link>

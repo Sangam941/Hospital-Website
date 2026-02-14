@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Activity } from 'lucide-react';
+import { Menu, X, Smile } from 'lucide-react';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,10 +17,10 @@ const Header = () => {
                 <div className="flex items-center gap-2">
                     <Link to="/" className="flex items-center gap-2">
                         <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                            <Activity className="text-white w-6 h-6" />
+                            <Smile className="text-white w-6 h-6" />
                         </div>
                         <span className="text-2xl font-bold tracking-tight text-slate-900">
-                            Medi<span className="text-primary">Core</span>
+                            Prestin <span className="text-primary">Dental</span>
                         </span>
                     </Link>
                 </div>

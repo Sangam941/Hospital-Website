@@ -4,33 +4,33 @@ import Card from '../components/ui/Card';
 
 const services = [
     {
-        title: 'Cardiology',
-        description: 'Comprehensive heart care including diagnostics and surgery.',
+        title: 'General Dentistry',
+        description: 'Comprehensive oral care including cleanings, fillings, and prevention.',
         image: '/images/services/cardiology.avif'
     },
     {
-        title: 'Neurology',
-        description: 'Advanced treatment for disorders of the nervous system.',
+        title: 'Orthodontics',
+        description: 'Advanced teeth straightening with braces and clear aligners.',
         image: '/images/services/neuralogy.avif'
     },
     {
-        title: 'Pediatrics',
-        description: 'Specialized healthcare for infants, children, and adolescents.',
+        title: 'Pediatric Dentistry',
+        description: 'Specialized dental care for infants, children, and adolescents.',
         image: '/images/services/Pediatrics.avif'
     },
     {
-        title: 'Orthopedics',
-        description: 'Treatment for conditions affecting bones, joints, and muscles.',
+        title: 'Cosmetic Dentistry',
+        description: 'Enhance your smile with whitening, veneers, and bonding.',
         image: '/images/services/Orthopedics.avif'
     },
     {
-        title: 'Ophthalmology',
-        description: 'Complete eye care services from exams to surgery.',
+        title: 'Oral Surgery',
+        description: 'Expert wisdom teeth removal and dental implant procedures.',
         image: '/images/services/Ophthalmology.avif'
     },
     {
-        title: 'Emergency Care',
-        description: '24/7 rapid response for critical medical situations.',
+        title: 'Emergency Dental',
+        description: '24/7 rapid response for urgent dental pain and trauma.',
         image: '/images/services/Emergency-Care.avif'
     },
 ];
@@ -51,10 +51,10 @@ const Services = () => {
 
                 <div className="relative z-10 text-center max-w-4xl mx-auto">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 mb-6">
-                        Our Specialized <span className="text-primary">Medical Services</span>
+                        Our Specialized <span className="text-primary">Dental Services</span>
                     </h1>
                     <p className="text-lg text-slate-600 mb-10 leading-relaxed">
-                        Delivering world-class healthcare with a personal touch. Our dedicated team of specialists utilizes advanced technology to provide comprehensive care for you and your family.
+                        Delivering world-class dental care with a personal touch. Our dedicated team of specialists utilizes advanced technology to provide comprehensive oral health care for you and your family.
                     </p>
                 </div>
             </section>
@@ -81,7 +81,7 @@ const Services = () => {
                         <div className="flex-1">
                             <h2 className="text-3xl font-bold text-slate-900 mb-4">Need Help Choosing?</h2>
                             <p className="text-slate-600 text-lg leading-relaxed">
-                                If you are unsure which department fits your needs, our medical consultants are here to guide you. Contact us for a preliminary assessment.
+                                If you are unsure which dental procedure fits your needs, our consultants are here to guide you. Contact us for a preliminary assessment.
                             </p>
                         </div>
                         <div className="flex flex-col sm:flex-row gap-4">
